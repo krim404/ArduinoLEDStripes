@@ -1,0 +1,18 @@
+sitemap default label="Main Menu"
+{	
+	Frame label="Räume" {
+   Text label="Test" icon="corridor" {
+   Frame label="Licht 1" {
+      Colorpicker item=flLicht1 icon="slider"
+      Switch item=flLicht1On
+      Switch item=flLicht1LL
+   }
+   Frame label="Licht 2" {
+      Colorpicker item=flLicht2 icon="slider"
+      Switch item=flLicht2On
+      Switch item=flLicht2LL
+   }
+}
+	
+	
+}

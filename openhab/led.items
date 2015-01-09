@@ -1,0 +1,13 @@
+Color  flLicht1     "Licht 1"    <slider> 
+Switch flLicht1On	"An/Aus" <switch> {mqtt=">[localbroker:/arduino/1/SWITCH:command:ON:1],>[localbroker:/arduino/1/SWITCH:command:OFF:0]"}
+Switch flLicht1LL	"LowLatency" <switch> {mqtt=">[localbroker:/arduino/1/LAT:command:ON:0],>[localbroker:/arduino/1/LAT:command:OFF:50]"}
+Dimmer flLicht1_R   "Rot [%d %%]"   <switch> {mqtt=">[localbroker:/arduino/1/RED:state:*:default]"}
+Dimmer flLicht1_G   "Grün [%d %%]"  <switch> {mqtt=">[localbroker:/arduino/1/GREEN:state:*:default]"}
+Dimmer flLicht1_B   "Blau [%d %%]"  <switch> {mqtt=">[localbroker:/arduino/1/BLUE:state:*:default]"}
+
+Color  flLicht2     "Licht 2"    <slider> 
+Switch flLicht2On	"An/Aus" <switch> {mqtt=">[localbroker:/arduino/2/SWITCH:command:ON:1],>[localbroker:/arduino/2/SWITCH:command:OFF:0]"}
+Switch flLicht2LL	"LowLatency" <switch> {mqtt=">[localbroker:/arduino/2/LAT:command:ON:0],>[localbroker:/arduino/2/LAT:command:OFF:50]"}
+Dimmer flLicht2_R   "Rot [%d %%]"   <switch> {mqtt=">[localbroker:/arduino/2/RED:state:*:default]"}
+Dimmer flLicht2_G   "Grün [%d %%]"  <switch> {mqtt=">[localbroker:/arduino/2/GREEN:state:*:default]"}
+Dimmer flLicht2_B   "Blau [%d %%]"  <switch> {mqtt=">[localbroker:/arduino/2/BLUE:state:*:default]"}

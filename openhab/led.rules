@@ -1,0 +1,39 @@
+import org.openhab.core.library.types.*
+ 
+var HSBType hsbValue
+var int redValue
+var int greenValue
+var int blueValue
+var String RGBvalues
+ 
+rule "Set flLicht1 value"
+   when
+   Item flLicht1 changed
+   then
+   hsbValue = flLicht1.state as HSBType 
+ 
+   redValue = hsbValue.red.intValue
+   greenValue = hsbValue.green.intValue
+   blueValue = hsbValue.blue.intValue
+ 
+   postUpdate(flLicht1_R, redValue)
+   postUpdate(flLicht1_G, greenValue)
+   postUpdate(flLicht1_B, blueValue)
+ 
+end
+
+rule "Set flLicht2 value"
+   when
+   Item flLicht2 changed
+   then
+   hsbValue = flLicht2.state as HSBType 
+ 
+   redValue = hsbValue.red.intValue
+   greenValue = hsbValue.green.intValue
+   blueValue = hsbValue.blue.intValue
+ 
+   postUpdate(flLicht2_R, redValue)
+   postUpdate(flLicht2_G, greenValue)
+   postUpdate(flLicht2_B, blueValue)
+ 
+end
