@@ -16,21 +16,21 @@ Requirement:
 
 Compatible with any mqtt compatible server (ex. Debian / openHAB)
 
-Requires RF24 based wireless transceiver for data exchange.
-RF24 Pin => Arduino Pin
-GND => GND
-3V3 => 3V3
-CE => D7
-CSN => D8
-SCK => D13
-MOSI => D11
-MISO => D12
-
+Requires RF24 based wireless transceiver for data exchange.  
+RF24 Pin => Arduino Pin  
+GND => GND  
+3V3 => 3V3  
+CE => D7  
+CSN => D8  
+SCK => D13  
+MOSI => D11  
+MISO => D12  
+  
 Soldering for the Driver:
-D3 => 390Ohm Resistor => LTV874 => MOSFET + 10kOhm on Mass => GREEN LED PIN
-D5 => 390Ohm Resistor => LTV874 => MOSFET + 10kOhm on Mass => RED LED PIN
-D6 => 390Ohm Resistor => LTV874 => MOSFET + 10kOhm on Mass => BLUE LED PIN
-
-3x Mass => MOSFET
-3x Mass => 10kOhm Resistor => LTV874
+D3 => 390Ohm Resistor => LTV874 => MOSFET + 10kOhm on Mass => GREEN LED PIN  
+D5 => 390Ohm Resistor => LTV874 => MOSFET + 10kOhm on Mass => RED LED PIN  
+D6 => 390Ohm Resistor => LTV874 => MOSFET + 10kOhm on Mass => BLUE LED PIN  
+  
+3x Mass => MOSFET  
+3x Mass => 10kOhm Resistor => LTV874  
 
